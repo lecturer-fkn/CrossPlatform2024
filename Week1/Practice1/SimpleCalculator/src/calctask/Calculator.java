@@ -15,7 +15,7 @@ public class Calculator {
         System.out.print("Input the type of operation (+, -, *, /, %): ");
         String operation = sc.next();
         int result = performOperation(firstNumber, secondNumber, operation);
-        System.out.print("\nYour answer is: " + result);
+        System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + result);
     }
 
     public static int performOperation(int firstOperand, int secondOperand, String operation)
