@@ -1,4 +1,4 @@
-package calc_task;
+package calctask;
 
 import java.util.Scanner;
 
@@ -18,24 +18,24 @@ public class Calculator {
         System.out.println("Your answer is: " + result);
     }
 
-    public static int performOperation(int firstNumber, int secondNumber, String operation)
+    public static int performOperation(int firstOperand, int secondOperand, String operation)
     {
         int result = 0;
         switch (operation) {
             case "+":
-                result = firstNumber + secondNumber;
+                result = firstOperand + secondOperand;
                 break;
             case "-":
-                result = firstNumber - secondNumber;
+                result = firstOperand - secondOperand;
                 break;
             case "*":
-                result = firstNumber * secondNumber;
+                result = firstOperand * secondOperand;
                 break;
             case "%":
-                result = firstNumber % secondNumber;
+                result = firstOperand % secondOperand;
                 break;
             case "/":
-                result = firstNumber / secondNumber;
+                result = firstOperand / secondOperand;
                 break;
             default:
                 System.out.println("Invalid operation");
