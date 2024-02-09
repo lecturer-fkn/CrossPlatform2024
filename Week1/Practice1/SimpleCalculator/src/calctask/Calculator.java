@@ -1,9 +1,21 @@
 package calctask;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+        Data x = new DataItem(1,"kg");
+        Data y = new DataItem(2, "kg");
+        List<Operation> op = new ArrayList<>();
+        op.add(new Plus(x, y));
+        op.add(new Minus(x, y));
+
+        for (Operation o : op) {
+            System.out.println(x + " " + o + " " + y + " = " + o.calc());
+        }
+        /*
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the first operand: ");
@@ -15,6 +27,7 @@ public class Calculator {
         String operation = sc.next();
         int result = performOperation(firstNumber, secondNumber, operation);
         System.out.println(firstNumber + " " + operation + " " + secondNumber + " = " + result);
+        */
     }
 
     private static int percent(int value, int per) {
