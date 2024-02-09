@@ -11,6 +11,8 @@ public class Calculator {
         List<Operation> op = new ArrayList<>();
         op.add(new Plus(x, y));
         op.add(new Minus(x, y));
+        op.add(new Times(x, y));
+        op.add(new Divide(y, x));
 
         for (Operation o : op) {
             System.out.println(x + " " + o + " " + y + " = " + o.calc());
