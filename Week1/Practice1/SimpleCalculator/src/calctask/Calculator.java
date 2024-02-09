@@ -17,6 +17,11 @@ public class Calculator {
         for (Operation o : op) {
             System.out.println(x + " " + o + " " + y + " = " + o.calc());
         }
+
+        x = new DataItem(500, "$");
+        y = new DataItem(25, "%");
+        Operation o = new Percent(x, y);
+        System.out.println(x + " " + o + " " + y + " = " + o.calc());
         /*
         Scanner sc = new Scanner(System.in);
 
